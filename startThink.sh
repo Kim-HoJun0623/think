@@ -24,7 +24,7 @@ rm -rf target || true
 # Maven 빌드 (파일 삭제 오류 무시)
 if [ -f "pom.xml" ]; then
     echo "Executing Maven build..."
-    mvn clean package -Dmaven.clean.failOnError=false
+   
 else
     echo "No build system found in $(pwd)! Exiting..."
     exit 1
